@@ -2,6 +2,7 @@ include <AutoItConstants.au3>
 HotKeySet("{End}", "MyExit")
 HotKeySet("{Ins}", "Pickup")
 HotKeySet("{Del}", "Punch")
+HotKeySet("{Home}", "Forward")
 
 $pickup = False
 $punch = False
