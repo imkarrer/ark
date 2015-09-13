@@ -11,45 +11,44 @@ While 1
     If $pickup Then
 		Send("{e}")
 		Sleep(100)
-	Else
+    Else
 		Sleep(10)
-	EndIf
+    EndIf
 
-	If $punch Then
-		MouseClick("left")
-		Sleep(100)
-	Else
-		Sleep(10)
-	EndIf
+    If $punch Then
+        MouseClick("left")
+        Sleep(100)
+    Else
+        Sleep(10)
+    EndIf
 
-	If $forward Then
-		Send("{w down}")
-	ElseIf Not $forward Then
-		Send("{w up}")
-	EndIf
-
+    If $forward Then
+        Send("{w down}")
+    ElseIf Not $forward Then
+        Send("{w up}")
+    EndIf
 Wend
 
 Func MyExit()
-	Exit
+    Exit
 EndFunc
 
 Func Toggle(ByRef $boolean)
-	If $boolean Then
-		$boolean = False
-	Else
-		$boolean = True
-	EndIf
+    If $boolean Then
+        $boolean = False
+    Else
+        $boolean = True
+    EndIf
 EndFunc
 
 Func Punch()
-	Toggle($punch)
+    Toggle($punch)
 EndFunc
 
 Func Pickup()
-	Toggle($pickup)
+    Toggle($pickup)
 EndFunc
 
 Func Forward()
-	Toggle($forward)
+    Toggle($forward)
 EndFunc
