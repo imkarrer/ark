@@ -9,10 +9,10 @@ $forward = False
 
 While 1
     If $pickup Then
-		Send("{e}")
-		Sleep(100)
+        Send("{e}")
+        Sleep(100)
     Else
-		Sleep(10)
+        Sleep(10)
     EndIf
 
     If $punch Then
