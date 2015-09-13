@@ -1,4 +1,3 @@
-include <AutoItConstants.au3>
 HotKeySet("{End}", "MyExit")
 HotKeySet("{Ins}", "Pickup")
 HotKeySet("{Del}", "Punch")
@@ -26,7 +25,6 @@ While 1
 	If $forward Then
 		Send("{w down}")
 	ElseIf Not $forward Then
-		If $
 		Send("{w up}")
 	EndIf
 
