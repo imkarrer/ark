@@ -21,12 +21,6 @@ While 1
     Else
         Sleep(10)
     EndIf
-
-    If $forward Then
-        Send("{w down}")
-    ElseIf Not $forward Then
-        Send("{w up}")
-    EndIf
 Wend
 
 Func MyExit()
@@ -50,5 +44,10 @@ Func Pickup()
 EndFunc
 
 Func Forward()
-    Toggle($forward)
+   Toggle($forward)
+   If $forward Then
+	  Send("{w down}")
+   ElseIf Not $forward Then
+	  Send("{w up}")
+   EndIf
 EndFunc
